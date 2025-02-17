@@ -7,13 +7,10 @@
 </head>
 <body>
     <div id="app"></div>    
-    <script>
-        const app = document.getElementById('app');
-        const header = document.createElement('h1');
-        const text = "Now I'm tired of try and error";
-        const headerContent = document.createTextNode(text);
-        header.appendChild(headerContent);
-        app.appendChild(header);
-    </script>
+    <script type="text/jsx">
+        const domNode = document.getElementById("app")
+        const root = ReactDOM.createRoot(domNode);
+        root.render(<h1>Develop. Preview. Ship.</h1>);
+      </script>
 </body>
 </html>
