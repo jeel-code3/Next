@@ -7,9 +7,12 @@
 </head>
 <body>
     <button onclick="display()">Click here to Add array elements</button>
+    <p id="a"></p>
     <script type="text/javascript">
-        function save(){
-            
+        function display(){
+           document.write('<input id="element"> <br><br> <button onclick=' + 'location.reload();' + '>Refresh Page</button>') 
+           let element = document.getElementById('element').value;
+
         }
         //let vijotis = ['Jackie', 'Nickoh', 'Jesse', 'Yusta', 'Vicky', 'Franco', 'Adrian'];
         console.log(vijotis.length + ' members of the Vijoti Club');
@@ -18,7 +21,7 @@
             console.log(vijotis[i] + ', ');
         }
         console.log(vijotis[6]);
-
+        
     </script>
 </body>
 </html>
